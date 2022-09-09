@@ -18,6 +18,12 @@ Documentation is [available on the GitHub pages](https://mountainmath.github.io/
 The example vignettes contain some [common use cases](https://mountainmath.github.io/cmhc/articles/basic_usage.html).
 
 ## Installation
+The stable version of **cmhc** can be easily installed from CRAN.
+```
+install.packages("cmhc")
+```
+
+Alternatively, the latest development version can be installed from Github.
 ```
 remotes::install_github("mountainmath/cmhc")
 ```
@@ -43,7 +49,7 @@ vacancy_data <- get_cmhc(survey="Rms",series="Vacancy Rate",dimension="Bedroom T
 If you wish to cite cmhc:
 
   von Bergmann, J. cmhc: R package to
-  access, retrieve, and work with CMHC data. v0.2.0.
+  access, retrieve, and work with CMHC data. v0.2.1.
 
 
 A BibTeX entry for LaTeX users is
@@ -52,11 +58,11 @@ A BibTeX entry for LaTeX users is
     author = {Jens {von Bergmann}},
     title = {cmhc: R package to access, retrieve, and work with CMHC data},
     year = {2022},
-    note = {R package version 0.2.0},
+    note = {R package version 0.2.1},
     url = {https://mountainmath.github.io/cmhc/},
   }
 ```
 
 ## Related packages
 
-The cmhc package is designed to work well with the [cancensus package](https://mountainmath.github.io/cancensus/) working with Canadian Census data and matches the census geographies.
+The cmhc package is designed to work well with the [**cancensus** package](https://mountainmath.github.io/cancensus/) working with Canadian Census data the [**cansim** package](https://mountainmath.github.io/cansim/) for regular StatCan tables, and matches the census geographies via a `GeoUID` column that is shared across these packages. The [**tongfen** package](https://mountainmath.github.io/tongfen/) facilitates making geographies from different census years that CMHC reports on comparable over time.

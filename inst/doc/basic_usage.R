@@ -73,7 +73,7 @@ ggplot(completions_data,aes(x=Date,y=Value,fill=`Dwelling Type`)) +
   scale_y_continuous(labels=scales::comma) +
   labs(title="City of Vancouver housing completions",
        x=NULL, y="Annual completions",
-       caption="CMHC Rms")
+       caption="CMHC Scss")
 
 ## -----------------------------------------------------------------------------
 under_construction_data <- get_cmhc(survey="Scss",series="Under Construction",dimension="Dwelling Type",
